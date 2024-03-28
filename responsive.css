@@ -1,0 +1,56 @@
+
+nav{
+	background-color: rgba(0,0,0,0.8);
+}
+
+nav .menuIconWrap{
+	display: block;
+	z-index: 1;
+}
+
+.menuClose .menuIcon1 {
+  -webkit-transform: rotate(-45deg) translate(-2px, 8px);
+  transform: rotate(-45deg) translate(-2px, 8px);
+}
+
+.menuClose .menuIcon2 {opacity: 0;}
+
+.menuClose .menuIcon3 {
+  -webkit-transform: rotate(45deg) translate(-2px, -8px);
+  transform: rotate(45deg) translate(-2px, -8px);
+}
+
+nav ul.nav{
+	flex-direction: column;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    width: 0;
+    padding-top: 50px;
+    transition: 0.4s;
+}
+
+nav ul.nav.navStyle{
+	width: 300px;
+}
+
+nav ul.nav li{
+	width: 100%;
+}
+
+nav ul.nav li a{
+	color: #818181;
+	display: block;
+	padding: 10px 0;
+}
+
+nav ul.nav li.closebtn{
+	display: block;
+	cursor: pointer;
+	color: #818181;
+	text-align: right;
+	font-size: 30px;
+	padding: 0 10px;
+}
